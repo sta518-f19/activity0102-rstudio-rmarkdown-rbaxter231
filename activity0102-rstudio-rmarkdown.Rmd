@@ -14,12 +14,13 @@ library(datasauRus)
 
 
 ### Exercise 1
+There are 1846 rows and 3 columns. THe variables included to the dataframe are: dataset, x, and y.
 
-(Type your answer to Exercise 1 here. This exercise does not require any R code.)
 
 ### Exercise 2
 
-(The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.)
+The answers for this Exercise are given for you below. But you should clean up some of the narrative so that it only includes what you want to turn in.) -- **Answers are after the code chunks.**
+
 
 First let's plot the data in the dino dataset:
 
@@ -31,12 +32,16 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
   geom_point()
 ```
 
+The plot is in the shape of a *dinosaur*.
+
 And next calculate the correlation between `x` and `y` in this dataset:
 
 ```{r cor-dino}
 dino_data %>%
   summarize(r = cor(x, y))
 ```
+
+The correlation coefficient is *-0.0645*.
 
 ### Exercise 3
 
